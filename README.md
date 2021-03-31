@@ -14,10 +14,10 @@ labels：https://pan.baidu.com/s/1L-fYqoylbEKMyiKXCXz-7g  提取码：szqg
 将下载好的images和labels放在data/mydata文件夹下，train.txt和valid.txt我已经生成好放在mydata文件夹下了。
 ### 修改配置文件
 找到data/coco128.yaml,需要修改的内容如下：
-> train: data/mydata/train.txt/     # 训练数据路径  
-> val: data/images/valid.txt/       # 验证数据路径  
-> nc: 2                             # num_classes=2  
-> names: ['face_not_mask','face_mask']  # claess_name  
+> train: data/mydata/train.txt/   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  # 训练数据路径  
+> val: data/images/valid.txt/     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  # 验证数据路径  
+> nc: 2                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # num_classes=2  
+> names: ['face_not_mask','face_mask'] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # claess_name  
 ### 训练
 执行如下代码：
 >$ python3 train.py --cfg yolov5s.yaml
