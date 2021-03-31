@@ -24,6 +24,8 @@ labels：https://pan.baidu.com/s/1L-fYqoylbEKMyiKXCXz-7g  提取码：szqg
 
 加载预训练权重执行如下代码：
 >$ python3 train.py --cfg yolov5s.yaml --weights weights/best.pt
+>
+### 测试
 
 ### 检测
 执行如下代码：
