@@ -4,8 +4,8 @@
 ### 配置环境
 执行如下代码：
 > $ pip3 install -r requirements.txt
-### 下载数据集
-images：https://pan.baidu.com/s/1m-4Z80T4IBtJXrlJrRW9pg  提取码：zpbw
+### 下载数据集 
+images：https://pan.baidu.com/s/1m-4Z80T4IBtJXrlJrRW9pg  提取码：zpbw  
 labels：https://pan.baidu.com/s/1L-fYqoylbEKMyiKXCXz-7g  提取码：szqg
 ### 口罩数据集预训练模型
 链接：https://pan.baidu.com/s/1jQVOnqoy0HAswB67R8BQ0w 提取码：gypi  
