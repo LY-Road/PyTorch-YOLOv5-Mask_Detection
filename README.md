@@ -35,7 +35,7 @@ labels：https://pan.baidu.com/s/1L-fYqoylbEKMyiKXCXz-7g  提取码：szqg
 ### 测试
 >$ python3 test.py --weights weights/best.pt
 
-主要权重路径，记得把训练好的模型放在weights文件夹下。
+注意权重路径，记得把训练好的模型放在weights文件夹下。
 
 ### 检测
 执行如下代码：
