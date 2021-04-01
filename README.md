@@ -8,7 +8,7 @@
 images：https://pan.baidu.com/s/1m-4Z80T4IBtJXrlJrRW9pg  提取码：zpbw  
 labels：https://pan.baidu.com/s/1L-fYqoylbEKMyiKXCXz-7g  提取码：szqg
 ### 口罩数据集预训练模型
-链接：https://pan.baidu.com/s/1jQVOnqoy0HAswB67R8BQ0w 提取码：gypi  
+链接：https://pan.baidu.com/s/1hZpQl9EAjNRyvinVJEyWvQ 提取码：m52y  
 将下载好的模型放在weights文件夹下。
 ### 数据处理
 将下载好的images和labels放在data/mydata文件夹下，train.txt和valid.txt我已经生成好放在mydata文件夹下了。
@@ -26,11 +26,13 @@ labels：https://pan.baidu.com/s/1L-fYqoylbEKMyiKXCXz-7g  提取码：szqg
 >$ python3 train.py --cfg yolov5s.yaml --weights weights/best.pt
 
 ### 测试
->$ python3 test.py --cfg yolov5s.yaml --weights weights/best.pt
+>$ python3 test.py --weights weights/best.pt
+
+主要权重路径，记得把训练好的模型放在weights文件夹下。
 
 ### 检测
 执行如下代码：
->$ python3 detect.py  --weights weights/best.pt --source 0  &nbsp;&nbsp;&nbsp;&nbsp;# webcam  
+>$ python3 detect.py --weights weights/best.pt --source 0  &nbsp;&nbsp;&nbsp;&nbsp;# webcam  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; file.jpg &nbsp;&nbsp;&nbsp;&nbsp; # image   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; file.mp4&nbsp;&nbsp;&nbsp;&nbsp; # video  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path/  &nbsp;&nbsp;&nbsp;&nbsp;# directory  
