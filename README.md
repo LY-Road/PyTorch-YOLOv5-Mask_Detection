@@ -25,9 +25,6 @@ labels：https://pan.baidu.com/s/1L-fYqoylbEKMyiKXCXz-7g  提取码：szqg
 加载预训练权重执行如下代码：
 >$ python3 train.py --cfg yolov5s.yaml --weights weights/best.pt
 
-### 测试
->$ python3 test.py --cfg yolov5s.yaml --weights weights/best.pt
-
 ### 检测
 执行如下代码：
 >$ python3 detect.py --source 0  &nbsp;&nbsp;&nbsp;&nbsp;# webcam  
